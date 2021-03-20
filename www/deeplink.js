@@ -50,7 +50,8 @@ var IonicDeeplink = {
       for (var targetPath in paths) {
         pathData = paths[targetPath];
 
-        var matchedParams = self.routeMatch(pathData, realPath);
+        //var matchedParams = self.routeMatch(pathData, realPath);
+        var matchedParams = self.routeMatch(targetPath, realPath);
 
         if (matchedParams !== false) {
           matched = true;
